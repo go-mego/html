@@ -1,0 +1,8 @@
+{{template "header"}}
+<p>嗨，歡迎來到 {{.Name}} 的網站！下面是個用 Golang 內建的模板迴圈所撰寫的資料列表。</p>
+<ul>
+    {{range .List}}
+        <li>{{.}}</li>
+    {{end}}
+</ul>
+{{template "footer"}}
